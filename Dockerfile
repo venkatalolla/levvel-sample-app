@@ -1,5 +1,5 @@
-FROM tomcat:8.0.20-jre8
+FROM bitnami/tomcat:latest
 
-COPY ./target/java-hello-world.war /usr/local/tomcat/webapps/java-app.war
+COPY ./target/java-hello-world.war /opt/bitnami/tomcat/webapps_default/java-app.war
 
 EXPOSE 8080
